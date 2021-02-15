@@ -1,0 +1,18 @@
+﻿<div class="row">
+    <div class="col s12 m6">
+        <div class="card light-blue darken-2">
+            <div class="card-content white-text">
+                <span class="card-title">@Title</span>
+                @Message
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public RenderFragment Message { get; set; }
+}
